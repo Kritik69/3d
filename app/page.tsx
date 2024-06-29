@@ -32,12 +32,15 @@ export default function Home() {
       <p
         style={{
           fontSize: "48px",
-          color: "#79161b",
+          color: "gray",
           fontWeight: "bold",
           textAlign: "center",
+          fontFamily: "courier new",
         }}
       >
-        {countdown !== 0 ? `Get ready in ${countdown}...` : "Runnn!!!!!!"}
+        {countdown !== 0
+          ? `Get ready in ${countdown}...`
+          : "radio silence..........."}
       </p>
       <div style={{ height: "80vh" }}>
         <CubeScene />
@@ -46,7 +49,7 @@ export default function Home() {
         <p
           style={{
             fontSize: "8px",
-            color: "#79161b",
+            color: "gray",
             fontWeight: "bold",
             textAlign: "center",
             position: "absolute",
